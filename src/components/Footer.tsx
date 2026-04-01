@@ -1,3 +1,5 @@
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+
 const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Atuação", href: "#atuacao" },
@@ -32,10 +34,13 @@ export default function Footer() {
             <h3 className="font-body text-sm font-semibold text-foreground mb-3">Contato</h3>
             <p className="text-sm text-muted-foreground">📍 R. José Bim, 312 – Centro, Atibaia – SP, 12940-640</p>
             <p className="mt-2 text-sm text-muted-foreground">
-              📞 <a href="tel:+551144136900" className="hover:text-primary transition-colors">(11) 4413-6900</a>
+              📞 <a href="tel:+5511971883485" className="hover:text-primary transition-colors">(11) 97188-3485</a>
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              💬 <a href="https://wa.me/551144136900" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">WhatsApp</a>
+            <p className="mt-1 text-sm text-muted-foreground flex items-center gap-1">
+              <WhatsAppIcon size={14} className="text-whatsapp" />
+              <a href="https://wa.me/5511971883485?text=Olá!%20Vim%20pelo%20site%20e%20preciso%20de%20uma%20advogada%20criminalista." target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                (11) 97188-3485
+              </a>
             </p>
           </div>
         </div>
