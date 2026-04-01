@@ -1,10 +1,10 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const items = [
-  { icon: "⚖️", title: "OAB/SP Credenciado", desc: "Advocacia regulamentada" },
-  { icon: "🏆", title: "Defesa Criminal Especializada", desc: "Atibaia e região" },
-  { icon: "⭐", title: "Avaliação 5 estrelas", desc: "Google Meu Negócio" },
-  { icon: "🕐", title: "Atendimento 24h", desc: "Inclusive finais de semana" },
+  { title: "OAB/SP Credenciado", desc: "Advocacia regulamentada" },
+  { title: "Defesa Criminal Especializada", desc: "Atibaia e região" },
+  { title: "Avaliação 5 estrelas", desc: "Google Meu Negócio" },
+  { title: "Atendimento 24h", desc: "Inclusive finais de semana" },
 ];
 
 export default function TrustBar() {
@@ -15,8 +15,7 @@ export default function TrustBar() {
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-0 md:divide-x md:divide-primary/30">
           {items.map((item, i) => (
             <div key={i} className="flex flex-col items-center gap-1 px-4 text-center">
-              <span className="text-2xl">{item.icon}</span>
-              <span className="font-body text-sm font-semibold text-foreground">{item.title}</span>
+              <span className="font-body text-sm font-bold text-foreground">{item.title}</span>
               <span className="text-xs text-muted-foreground">{item.desc}</span>
             </div>
           ))}

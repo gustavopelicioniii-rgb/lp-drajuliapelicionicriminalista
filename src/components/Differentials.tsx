@@ -1,17 +1,16 @@
-import { Shield, Lock, Zap } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const cards = [
-  { icon: Shield, title: "Defesa Técnica de Alto Nível", desc: "Estratégias jurídicas desenvolvidas individualmente para cada caso. Atuamos em inquéritos, audiências, júri e tribunais superiores com profundidade técnica." },
-  { icon: Lock, title: "Sigilo Absoluto", desc: "Seu caso é tratado com total confidencialidade. Do primeiro contato ao encerramento do processo, discrição e respeito são inegociáveis." },
-  { icon: Zap, title: "Atendimento Imediato 24h", desc: "Estamos disponíveis quando você mais precisa — inclusive madrugadas, fins de semana e feriados. Presença imediata em delegacias e audiências." },
+  { title: "Defesa Técnica Agressiva", desc: "Estratégias jurídicas individualizadas para cada caso. Atuamos em inquéritos, audiências, júri e tribunais superiores com profundidade técnica e combatividade máxima." },
+  { title: "Sigilo Absoluto", desc: "Seu caso é tratado com total confidencialidade. Ninguém saberá que você nos procurou. Discrição e respeito são inegociáveis — do primeiro contato ao encerramento." },
+  { title: "Atendimento Imediato 24h", desc: "Madrugada, fim de semana, feriado — não importa. Quando sua liberdade está em jogo, estamos prontos para agir. Presença imediata em delegacias e audiências." },
 ];
 
 const steps = [
   "Contato via WhatsApp",
-  "Análise gratuita do caso",
+  "Análise imediata do caso",
   "Estratégia de defesa personalizada",
-  "Atuação imediata",
+  "Atuação imediata e agressiva",
 ];
 
 export default function Differentials() {
@@ -20,14 +19,13 @@ export default function Differentials() {
     <section ref={ref} className={`section-padding transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
       <div className="container-custom">
         <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl text-center">
-          Por que escolher a Advocacia S Silva?
+          Por que a Advocacia S Silva é diferente?
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {cards.map((c, i) => (
             <div key={i} className="rounded-lg border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_8px_30px_-12px_hsl(43,52%,54%,0.2)]">
-              <c.icon className="text-primary" size={32} />
-              <h3 className="mt-4 font-display text-lg font-bold text-foreground">{c.title}</h3>
+              <h3 className="font-display text-lg font-bold text-primary">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.desc}</p>
             </div>
           ))}
@@ -43,11 +41,9 @@ export default function Differentials() {
                   {i + 1}
                 </div>
                 <span className="text-sm font-medium text-foreground">{step}</span>
-                {i < steps.length - 1 && <div className="hidden md:block absolute" />}
               </div>
             ))}
           </div>
-          {/* Connector line desktop */}
           <div className="hidden md:block mx-auto mt-[-28px] mb-4 h-0.5 bg-primary/20" style={{ width: "70%", marginLeft: "15%" }} />
         </div>
       </div>

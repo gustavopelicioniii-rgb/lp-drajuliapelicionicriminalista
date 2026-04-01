@@ -1,6 +1,6 @@
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
-const WA_LINK = "https://wa.me/551144136900?text=Olá!%20Preciso%20de%20um%20advogado%20criminalista%20urgente.%20Vim%20pelo%20site.";
+const WA_LINK = "https://wa.me/5511971883485?text=Olá!%20Preciso%20de%20uma%20advogada%20criminalista%20URGENTE.%20Vim%20pelo%20site.";
 
 export default function WhatsAppFloat() {
   return (
@@ -8,11 +8,11 @@ export default function WhatsAppFloat() {
       href={WA_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Fale com um criminalista agora"
-      title="Fale com um criminalista agora"
+      aria-label="Fale com uma criminalista agora"
+      title="Fale com uma criminalista agora"
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-whatsapp transition-transform hover:scale-110"
     >
-      <MessageCircle size={28} />
+      <WhatsAppIcon size={28} />
     </a>
   );
 }
