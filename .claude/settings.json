@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(curl -s https://criminal-defense-hub.vercel.app/google4bdcf03b505e6891.html)",
+      "Bash(curl -v https://criminal-defense-hub.vercel.app/google4bdcf03b505e6891.html)",
+      "Bash(curl -s https://lp-drajuliapelicionicriminalista.vercel.app/google4bdcf03b505e6891.html)",
+      "Bash(curl -v -L https://lp-drajuliapelicionicriminalista.vercel.app/google4bdcf03b505e6891.html)",
+      "Bash(curl -s https://lp-drajuliapelicionicriminalista.vercel.app/)"
+    ]
+  }
+}

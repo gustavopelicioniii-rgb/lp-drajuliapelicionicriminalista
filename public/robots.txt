@@ -1,14 +1,57 @@
+# Sitemap location
+Sitemap: https://advocaciassilva.adv.br/sitemap.xml
+
+# Google Bot
 User-agent: Googlebot
 Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /dist/
+Crawl-delay: 0
 
+# Bing Bot
 User-agent: Bingbot
 Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /dist/
+Crawl-delay: 1
 
-User-agent: Twitterbot
-Allow: /
-
+# Facebook External Hit
 User-agent: facebookexternalhit
 Allow: /
 
+# Twitter Bot
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 10
+
+# WhatsApp Bot
+User-agent: WhatsApp
+Allow: /
+
+# All other crawlers
 User-agent: *
 Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /dist/
+Disallow: /private/
+Disallow: /admin/
+Crawl-delay: 2
+
+# Slow down aggressive crawlers
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 10

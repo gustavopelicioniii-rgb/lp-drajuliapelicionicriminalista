@@ -1,19 +1,26 @@
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import heroImg from "@/assets/hero-handcuffs.jpg";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const WA_LINK = "https://wa.me/5511971883485?text=Olá!%20Preciso%20de%20uma%20advogada%20criminalista%20URGENTE.%20Vim%20pelo%20site.";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-[100svh] items-center overflow-hidden px-0 pb-20 pt-32 md:min-h-[90vh] md:pb-14 md:pt-40">
-      {/* Background image */}
-      <img
+    <section
+      id="inicio"
+      className="relative flex min-h-[100svh] items-center overflow-hidden px-0 pb-20 pt-32 md:min-h-[90vh] md:pb-14 md:pt-40"
+      aria-label="Seção inicial — Advogada Criminalista Atibaia"
+    >
+      {/* Background image — optimized with lazy loading */}
+      <OptimizedImage
         src={heroImg}
-        alt="Dra Julia Pelicioni — advogada criminalista Atibaia SP"
+        alt="Dra Julia Pelicioni — advogada criminalista em Atibaia SP. Imagem de escritório de advocacia profissional."
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={800}
+        quality={75}
+        priority={true}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background/95 md:bg-gradient-to-r md:from-background md:via-background/90 md:to-background/60" />
 
