@@ -1,7 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import draPhoto from "@/assets/dra-sidney.jpeg";
 
-const seals = ["OAB/SP", "Atibaia – SP", "Defesa Criminal", "Atendimento 24h"];
+const seals = ["OAB/MG", "Atibaia – SP", "Defesa Criminal", "Atendimento 24h"];
 
 export default function About() {
   const { ref, isVisible } = useScrollAnimation();
@@ -13,7 +13,7 @@ export default function About() {
           <div className="aspect-[4/5] rounded-lg border border-border overflow-hidden">
             <img
               src={draPhoto}
-              alt="Dra. Sidney da Silva — advogada criminalista Atibaia SP, escritório Advocacia S Silva"
+              alt="Dra Julia Pelicioni — advogada criminalista Atibaia SP"
               className="w-full h-full object-cover object-top"
               loading="lazy"
               width={600}
@@ -23,17 +23,17 @@ export default function About() {
 
           <div>
             <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl">
-              Conheça a Advocacia S Silva — Advogada Criminalista em Atibaia SP
+              Conheça a Dra Julia Pelicioni — Advogada Criminalista em Atibaia SP
             </h2>
             <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
               <p>
-                A Advocacia S Silva nasceu com um perfil combativo e inovador na prestação de serviços jurídicos em Atibaia e região. Localizado no centro de Atibaia — SP, o escritório é liderado pela Dra. Sidney da Silva, advogada criminalista com atuação implacável na defesa dos direitos de seus clientes.
+                A Dra Julia Pelicioni atua com um perfil combativo e inovador na prestação de serviços jurídicos em Atibaia e região. Com escritório no centro de Atibaia — SP, a Dra Julia é advogada criminalista com atuação implacável na defesa dos direitos de seus clientes.
               </p>
               <p>
                 Atuamos em casos de alta complexidade — prisões em flagrante, inquéritos policiais, processos criminais, Tribunal do Júri e Habeas Corpus — sempre com estratégia agressiva, ética e comprometimento total com a sua liberdade.
               </p>
               <p>
-                Cada cliente é atendido de forma personalizada, com atenção total às particularidades do caso e comunicação direta em todas as fases do processo. Quando sua liberdade está em risco, a Dra. Sidney está pronta para lutar por você.
+                Cada cliente é atendido de forma personalizada, com atenção total às particularidades do caso e comunicação direta em todas as fases do processo. Quando sua liberdade está em risco, a Dra Julia está pronta para lutar por você.
               </p>
             </div>
 

@@ -18,18 +18,18 @@ export default function Header() {
   return (
     <>
       {/* Top crimson bar */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-[hsl(0,70%,25%)] text-center py-2 px-4">
-        <span className="text-xs font-bold tracking-widest uppercase text-primary sm:text-sm">
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-[hsl(0,70%,25%)] text-center py-1.5 px-4">
+        <span className="text-[10px] font-bold tracking-widest uppercase text-primary sm:text-xs">
           PLANTÃO CRIMINAL 24H EM ATIBAIA E REGIÃO — ATENDIMENTO IMEDIATO
         </span>
       </div>
 
-      <header className="fixed top-[36px] left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
-        <div className="container-custom flex h-16 items-center justify-between md:h-20">
+      <header className="fixed top-[30px] left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
+        <div className="container-custom flex h-14 items-center justify-between md:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex flex-col" aria-label="Início">
-            <span className="font-display text-lg font-bold text-foreground md:text-xl">Advocacia S Silva</span>
-            <span className="text-[10px] text-muted-foreground tracking-wide">Advogada Criminalista · OAB/SP</span>
+            <span className="font-display text-base font-bold text-foreground md:text-xl">Dra Julia Pelicioni</span>
+            <span className="text-[10px] text-muted-foreground tracking-wide">Advogada Criminalista · OAB/MG</span>
             <span className="h-0.5 w-12 bg-primary mt-1" />
           </a>
 

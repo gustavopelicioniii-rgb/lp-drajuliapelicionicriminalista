@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const cards = [
   { title: "Defesa Técnica Agressiva", desc: "Estratégias jurídicas individualizadas para cada caso. Atuamos em inquéritos, audiências, júri e tribunais superiores com profundidade técnica e combatividade máxima." },
   { title: "Sigilo Absoluto", desc: "Seu caso é tratado com total confidencialidade. Ninguém saberá que você nos procurou. Discrição e respeito são inegociáveis — do primeiro contato ao encerramento." },
-  { title: "Atendimento Imediato 24h", desc: "Madrugada, fim de semana, feriado — não importa. Quando sua liberdade está em jogo, estamos prontos para agir. Presença imediata em delegacias e audiências." },
+  { title: "Atendimento Imediato 24h", desc: "Madrugada, fim de semana, feriado — não importa. Quando sua liberdade está em jogo, a Dra Julia está pronta para agir. Presença imediata em delegacias e audiências." },
 ];
 
 const steps = [
@@ -19,7 +19,7 @@ export default function Differentials() {
     <section ref={ref} className={`section-padding transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
       <div className="container-custom">
         <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl text-center">
-          Por que a Advocacia S Silva é diferente?
+          Por que a Dra Julia Pelicioni é diferente?
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

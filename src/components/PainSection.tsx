@@ -22,7 +22,7 @@ export default function PainSection() {
           Você ou alguém da sua família está passando por isso AGORA?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground font-semibold">
-          Cada hora sem uma advogada criminalista pode custar a liberdade. A Advocacia S Silva atua de forma imediata — 24 horas por dia, 7 dias por semana.
+          Cada hora sem uma advogada criminalista pode custar a liberdade. A Dra Julia Pelicioni atua de forma imediata — 24 horas por dia, 7 dias por semana.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
