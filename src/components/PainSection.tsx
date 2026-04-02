@@ -37,8 +37,8 @@ export default function PainSection() {
         <div className="mt-8 text-center md:mt-12">
           <p className="mb-4 px-2 text-base font-bold text-destructive md:text-lg">⚠️ NÃO ENFRENTE ISSO SOZINHO. CADA MINUTO CONTA.</p>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex w-full max-w-sm">
-            <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp font-bold text-whatsapp-foreground hover:bg-whatsapp/90" style={{ minHeight: 48 }}>
-              <WhatsAppIcon size={18} /> QUERO FALAR COM A ADVOGADA AGORA
+            <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp font-bold text-whatsapp-foreground hover:bg-whatsapp/90 whitespace-normal h-auto py-3 px-4 text-sm sm:text-base" style={{ minHeight: 48 }}>
+              <WhatsAppIcon size={18} className="shrink-0" /> QUERO FALAR COM A ADVOGADA AGORA
             </Button>
           </a>
         </div>

@@ -17,8 +17,8 @@ export default function FinalCTA() {
           Entre em contato AGORA com a Dra Julia Pelicioni e receba orientação jurídica imediata — sigilosa, sem compromisso e sem julgamento.
         </p>
         <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex w-full max-w-sm md:mt-8">
-          <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp px-6 text-sm font-bold text-whatsapp-foreground hover:bg-whatsapp/90 md:px-8 md:text-base" style={{ minHeight: 56 }}>
-            <WhatsAppIcon size={20} /> FALAR COM ADVOGADA NO WHATSAPP AGORA
+          <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp px-4 text-sm font-bold text-whatsapp-foreground hover:bg-whatsapp/90 md:px-8 md:text-base whitespace-normal h-auto py-4" style={{ minHeight: 56 }}>
+            <WhatsAppIcon size={20} className="shrink-0" /> FALAR COM ADVOGADA NO WHATSAPP AGORA
           </Button>
         </a>
         <p className="mt-3 text-xs text-muted-foreground md:text-sm">

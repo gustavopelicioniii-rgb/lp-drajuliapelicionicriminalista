@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import PainSection from "@/components/PainSection";
 import Specialties from "@/components/Specialties";
-import Differentials from "@/components/Differentials";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import Coverage from "@/components/Coverage";
@@ -21,7 +20,6 @@ const Index = () => {
         <TrustBar />
         <PainSection />
         <Specialties />
-        <Differentials />
         <About />
         <FAQ />
         <Coverage />

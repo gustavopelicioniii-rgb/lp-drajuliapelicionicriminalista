@@ -26,10 +26,14 @@ export default function Hero() {
             Preso em flagrante? Sendo investigado? Cada minuto sem defesa técnica pode custar sua liberdade. Dra Julia Pelicioni — atendimento imediato em delegacias, audiências de custódia, Tribunal do Júri e Habeas Corpus em Atibaia e região.
           </h2>
 
+          <div className="mb-6 mt-3 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-destructive/50 bg-destructive/10 px-4 py-2 text-center text-xs font-bold text-destructive sm:text-sm md:hidden">
+            ⚡ ATENDIMENTO EM ATÉ 30 MINUTOS · PLANTÃO 24H
+          </div>
+
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp text-sm font-bold text-whatsapp-foreground hover:bg-whatsapp/90 sm:w-auto sm:text-base" style={{ minHeight: 48 }}>
-                <WhatsAppIcon size={18} /> FALAR AGORA COM ADVOGADA
+              <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp text-sm font-bold text-whatsapp-foreground hover:bg-whatsapp/90 sm:w-auto sm:text-base whitespace-normal h-auto py-3 px-4" style={{ minHeight: 48 }}>
+                <WhatsAppIcon size={18} className="shrink-0" /> FALAR AGORA COM ADVOGADA
               </Button>
             </a>
             <a href="tel:+5511971883485" className="w-full sm:w-auto">
@@ -39,7 +43,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-5 inline-flex max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-destructive/50 bg-destructive/10 px-4 py-2 text-center text-xs font-bold text-destructive sm:text-sm">
+          <div className="mt-6 hidden max-w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-destructive/50 bg-destructive/10 px-4 py-2 text-center text-sm font-bold text-destructive md:inline-flex lg:mt-8">
             ⚡ ATENDIMENTO EM ATÉ 30 MINUTOS · PLANTÃO 24H · NÃO ESPERE
           </div>
         </div>

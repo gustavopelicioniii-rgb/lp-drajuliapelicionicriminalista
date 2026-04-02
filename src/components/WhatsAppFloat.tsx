@@ -10,7 +10,7 @@ export default function WhatsAppFloat() {
       rel="noopener noreferrer"
       aria-label="Fale com uma criminalista agora"
       title="Fale com uma criminalista agora"
-      className="fixed bottom-[5.75rem] right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-whatsapp transition-transform hover:scale-110 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14"
+      className="fixed bottom-24 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lg animate-pulse-whatsapp transition-transform hover:scale-110 sm:bottom-6 sm:right-6 sm:h-14 sm:w-14"
     >
       <WhatsAppIcon size={28} />
     </a>

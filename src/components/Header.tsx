@@ -18,13 +18,13 @@ export default function Header() {
   return (
     <>
       {/* Top crimson bar */}
-      <div className="fixed left-0 right-0 top-0 z-[60] bg-[hsl(0,70%,25%)] px-3 py-1 text-center sm:px-4 sm:py-1.5">
-        <span className="text-[9px] font-bold uppercase leading-tight tracking-[0.16em] text-primary sm:text-xs">
+      <div className="fixed left-0 right-0 top-0 z-[60] bg-[hsl(0,70%,25%)] px-2 py-1.5 text-center sm:px-4 sm:py-1.5 min-h-[30px] flex items-center justify-center">
+        <span className="text-[8px] font-bold uppercase leading-tight tracking-[0.12em] text-primary min-[380px]:text-[9px] sm:text-xs">
           PLANTÃO CRIMINAL 24H EM ATIBAIA E REGIÃO — ATENDIMENTO IMEDIATO
         </span>
       </div>
 
-      <header className="fixed left-0 right-0 top-[22px] z-50 border-b border-border bg-background/95 backdrop-blur-sm sm:top-[30px]">
+      <header className="fixed left-0 right-0 top-[30px] z-50 border-b border-border bg-background/95 backdrop-blur-sm sm:top-[34px]">
         <div className="container-custom flex h-12 items-center justify-between md:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex min-w-0 flex-col justify-center" aria-label="Início">
