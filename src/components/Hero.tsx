@@ -6,7 +6,7 @@ const WA_LINK = "https://wa.me/5511971883485?text=Olá!%20Preciso%20de%20uma%20a
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-[100svh] items-end overflow-hidden px-0 pb-10 pt-24 md:min-h-[90vh] md:items-center md:pb-14 md:pt-40">
+    <section id="inicio" className="relative flex min-h-[100svh] items-center overflow-hidden px-0 pb-20 pt-32 md:min-h-[90vh] md:pb-14 md:pt-40">
       {/* Background image */}
       <img
         src={heroImg}
@@ -15,14 +15,14 @@ export default function Hero() {
         width={1920}
         height={800}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background md:bg-gradient-to-r md:from-background md:via-background/90 md:to-background/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background/95 md:bg-gradient-to-r md:from-background md:via-background/90 md:to-background/60" />
 
-      <div className="container-custom relative z-10 w-full">
-        <div className="max-w-3xl">
+      <div className="container-custom relative z-10 w-full text-center md:text-left flex flex-col items-center md:items-start">
+        <div className="max-w-3xl flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="font-display text-3xl font-bold leading-[1.05] text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             Advogada Criminalista em Atibaia SP — Defesa Criminal 24 Horas
           </h1>
-          <h2 className="mt-4 font-body text-sm font-normal leading-relaxed text-muted-foreground sm:text-lg md:mt-5 md:text-xl">
+          <h2 className="mt-4 font-body text-sm font-normal leading-relaxed text-foreground/90 sm:text-lg md:mt-5 md:text-xl">
             Preso em flagrante? Sendo investigado? Cada minuto sem defesa técnica pode custar sua liberdade. Dra Julia Pelicioni — atendimento imediato em delegacias, audiências de custódia, Tribunal do Júri e Habeas Corpus em Atibaia e região.
           </h2>
 

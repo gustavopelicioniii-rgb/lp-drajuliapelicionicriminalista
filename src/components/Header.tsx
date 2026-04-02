@@ -51,11 +51,6 @@ export default function Header() {
 
           {/* Mobile buttons */}
           <div className="flex items-center gap-2 md:hidden">
-            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <Button size="sm" className="h-9 w-9 bg-whatsapp px-0 text-whatsapp-foreground hover:bg-whatsapp/90">
-                <WhatsAppIcon size={16} />
-              </Button>
-            </a>
             <button onClick={() => setOpen(!open)} aria-label="Abrir menu" className="p-1 text-foreground">
               {open ? (
                 <span className="text-2xl font-light">✕</span>
