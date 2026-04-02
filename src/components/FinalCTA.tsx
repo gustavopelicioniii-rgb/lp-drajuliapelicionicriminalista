@@ -14,7 +14,7 @@ export default function FinalCTA() {
           NÃO ESPERE O PROBLEMA PIORAR. SUA LIBERDADE NÃO PODE ESPERAR.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground font-semibold">
-          Entre em contato AGORA com a Advocacia S Silva e receba orientação jurídica imediata — sigilosa, sem compromisso e sem julgamento.
+          Entre em contato AGORA com a Dra Julia Pelicioni e receba orientação jurídica imediata — sigilosa, sem compromisso e sem julgamento.
         </p>
         <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="mt-8 inline-block">
           <Button size="lg" className="gap-2 bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp/90 text-base px-8 font-bold" style={{ minHeight: 56 }}>

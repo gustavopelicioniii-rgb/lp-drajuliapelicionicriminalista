@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="container-custom">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <span className="font-display text-xl font-bold text-foreground">Advocacia S Silva</span>
+            <span className="font-display text-xl font-bold text-foreground">Dra Julia Pelicioni</span>
             <div className="mt-1 h-0.5 w-10 bg-primary" />
-            <p className="mt-3 text-sm text-muted-foreground">Defesa Criminal Especializada em Atibaia e Região</p>
+            <p className="mt-3 text-sm text-muted-foreground">Advogada Criminalista — Defesa Criminal Especializada em Atibaia e Região</p>
           </div>
 
           <div>
@@ -46,8 +46,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          <p>OAB/SP — Advocacia regulamentada</p>
-          <p className="mt-1">© 2025 Advocacia S Silva · Todos os direitos reservados</p>
+          <p>OAB/MG — Advocacia regulamentada</p>
+          <p className="mt-1">© 2025 Dra Julia Pelicioni · Todos os direitos reservados</p>
           <div className="mt-2 flex justify-center gap-4">
             <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
             <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>

@@ -1,9 +1,9 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const items = [
-  { title: "OAB/SP Credenciado", desc: "Advocacia regulamentada" },
+  { title: "OAB/MG Credenciada", desc: "Advocacia regulamentada" },
   { title: "Defesa Criminal Especializada", desc: "Atibaia e região" },
-  { title: "Avaliação 5 estrelas", desc: "Google Meu Negócio" },
+  { title: "Atuação Implacável", desc: "Casos de alta complexidade" },
   { title: "Atendimento 24h", desc: "Inclusive finais de semana" },
 ];
 

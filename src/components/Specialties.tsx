@@ -28,7 +28,7 @@ export default function Specialties() {
           Atuação em TODOS os tipos de crime — Defesa implacável
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
-          Estratégias de defesa desenvolvidas caso a caso. Não importa a gravidade — sua liberdade é nossa prioridade.
+          Estratégias de defesa desenvolvidas caso a caso pela Dra Julia Pelicioni. Não importa a gravidade — sua liberdade é nossa prioridade.
         </p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">

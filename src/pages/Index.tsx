@@ -5,7 +5,6 @@ import PainSection from "@/components/PainSection";
 import Specialties from "@/components/Specialties";
 import Differentials from "@/components/Differentials";
 import About from "@/components/About";
-import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Coverage from "@/components/Coverage";
 import FinalCTA from "@/components/FinalCTA";
@@ -24,7 +23,6 @@ const Index = () => {
         <Specialties />
         <Differentials />
         <About />
-        <Testimonials />
         <FAQ />
         <Coverage />
         <FinalCTA />

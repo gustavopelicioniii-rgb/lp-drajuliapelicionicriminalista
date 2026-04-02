@@ -6,11 +6,11 @@ const WA_LINK = "https://wa.me/5511971883485?text=Olá!%20Preciso%20de%20uma%20a
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-[90vh] items-center section-padding pt-36 md:pt-40">
+    <section id="inicio" className="relative flex min-h-[90vh] items-center section-padding pt-32 md:pt-40">
       {/* Background image */}
       <img
         src={heroImg}
-        alt="advogada criminalista Atibaia SP escritório Advocacia S Silva"
+        alt="Dra Julia Pelicioni — advogada criminalista Atibaia SP"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={800}
@@ -23,7 +23,7 @@ export default function Hero() {
             Advogada Criminalista em Atibaia SP — Defesa Criminal 24 Horas
           </h1>
           <h2 className="mt-5 font-body text-base font-normal leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
-            Preso em flagrante? Sendo investigado? Cada minuto sem defesa técnica pode custar sua liberdade. Atendimento imediato em delegacias, audiências de custódia, Tribunal do Júri e Habeas Corpus em Atibaia e região.
+            Preso em flagrante? Sendo investigado? Cada minuto sem defesa técnica pode custar sua liberdade. Dra Julia Pelicioni — atendimento imediato em delegacias, audiências de custódia, Tribunal do Júri e Habeas Corpus em Atibaia e região.
           </h2>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
