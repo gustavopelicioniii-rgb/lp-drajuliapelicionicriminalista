@@ -49,6 +49,11 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
   * {
     @apply border-border;
   }
@@ -56,6 +61,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3 {
@@ -66,11 +72,17 @@
 
 @layer utilities {
   .section-padding {
-    @apply py-14 md:py-24;
+    @apply py-10 md:py-24;
   }
 
   .container-custom {
     @apply mx-auto max-w-[1200px] px-4 sm:px-6;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 7rem;
   }
 }
 

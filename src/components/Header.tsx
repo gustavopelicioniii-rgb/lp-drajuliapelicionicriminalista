@@ -18,19 +18,19 @@ export default function Header() {
   return (
     <>
       {/* Top crimson bar */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-[hsl(0,70%,25%)] text-center py-1.5 px-4">
-        <span className="text-[10px] font-bold tracking-widest uppercase text-primary sm:text-xs">
+      <div className="fixed left-0 right-0 top-0 z-[60] bg-[hsl(0,70%,25%)] px-3 py-1 text-center sm:px-4 sm:py-1.5">
+        <span className="text-[9px] font-bold uppercase leading-tight tracking-[0.16em] text-primary sm:text-xs">
           PLANTÃO CRIMINAL 24H EM ATIBAIA E REGIÃO — ATENDIMENTO IMEDIATO
         </span>
       </div>
 
-      <header className="fixed top-[30px] left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
-        <div className="container-custom flex h-14 items-center justify-between md:h-20">
+      <header className="fixed left-0 right-0 top-[22px] z-50 border-b border-border bg-background/95 backdrop-blur-sm sm:top-[30px]">
+        <div className="container-custom flex h-12 items-center justify-between md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex flex-col" aria-label="Início">
-            <span className="font-display text-base font-bold text-foreground md:text-xl">Dra Julia Pelicioni</span>
-            <span className="text-[10px] text-muted-foreground tracking-wide">Advogada Criminalista · OAB/MG</span>
-            <span className="h-0.5 w-12 bg-primary mt-1" />
+          <a href="#inicio" className="flex min-w-0 flex-col justify-center" aria-label="Início">
+            <span className="font-display text-sm font-bold leading-none text-foreground md:text-xl">Dra Julia Pelicioni</span>
+            <span className="text-[9px] leading-none text-muted-foreground tracking-[0.12em] md:text-[10px]">Advogada Criminalista · OAB/MG</span>
+            <span className="mt-1 h-0.5 w-10 bg-primary md:w-12" />
           </a>
 
           {/* Desktop nav */}
@@ -50,13 +50,13 @@ export default function Header() {
           </a>
 
           {/* Mobile buttons */}
-          <div className="flex items-center gap-3 md:hidden">
+          <div className="flex items-center gap-2 md:hidden">
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <Button size="sm" className="bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp/90">
+              <Button size="sm" className="h-9 w-9 bg-whatsapp px-0 text-whatsapp-foreground hover:bg-whatsapp/90">
                 <WhatsAppIcon size={16} />
               </Button>
             </a>
-            <button onClick={() => setOpen(!open)} aria-label="Abrir menu" className="text-foreground">
+            <button onClick={() => setOpen(!open)} aria-label="Abrir menu" className="p-1 text-foreground">
               {open ? (
                 <span className="text-2xl font-light">✕</span>
               ) : (
@@ -72,9 +72,9 @@ export default function Header() {
 
         {/* Mobile menu */}
         {open && (
-          <nav className="border-t border-border bg-background px-4 pb-6 pt-4 md:hidden" aria-label="Menu mobile">
+          <nav className="border-t border-border bg-background px-4 pb-4 pt-3 md:hidden" aria-label="Menu mobile">
             {navItems.map((item) => (
-              <a key={item.href} href={item.href} onClick={() => setOpen(false)} className="block py-3 text-base font-medium text-muted-foreground transition-colors hover:text-primary">
+              <a key={item.href} href={item.href} onClick={() => setOpen(false)} className="block py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                 {item.label}
               </a>
             ))}

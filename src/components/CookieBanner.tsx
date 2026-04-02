@@ -17,12 +17,12 @@ export default function CookieBanner() {
   if (!show) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-card p-4 md:flex md:items-center md:justify-between md:px-8">
-      <p className="text-sm text-muted-foreground">
+    <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-card/95 px-4 py-3 backdrop-blur md:flex md:items-center md:justify-between md:px-8">
+      <p className="pr-2 text-xs leading-relaxed text-muted-foreground md:text-sm">
         Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa{" "}
         <a href="#" className="text-primary underline">Política de Privacidade</a>.
       </p>
-      <Button onClick={accept} size="sm" className="mt-3 bg-primary text-primary-foreground hover:bg-primary/90 md:mt-0 md:ml-4">
+      <Button onClick={accept} size="sm" className="mt-3 w-full bg-primary text-primary-foreground hover:bg-primary/90 md:mt-0 md:ml-4 md:w-auto">
         Aceitar
       </Button>
     </div>
