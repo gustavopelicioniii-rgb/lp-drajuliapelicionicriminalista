@@ -22,7 +22,7 @@
   ],
   "rewrites": [
     {
-      "source": "/(?!google.*\\.html|robots\\.txt|sitemap\\.xml)(.*)",
+      "source": "/(?!google4bdcf03b505e6891\\.html|robots\\.txt|sitemap\\.xml).*",
       "destination": "/index.html"
     }
   ]
