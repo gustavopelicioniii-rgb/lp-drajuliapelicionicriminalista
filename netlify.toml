@@ -1,0 +1,63 @@
+# Netlify deployment configuration
+# This ensures sitemap.xml, robots.txt, and other static files are served correctly
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Headers configuration for SEO and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Language = "pt-BR"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Static files with aggressive caching
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Sitemap and robots.txt with moderate caching
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain"
+    Cache-Control = "public, max-age=86400"
+
+# Rewrite configuration for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+# Ensure sitemap.xml and robots.txt are NOT rewritten
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+# Ensure Google verification files are accessible
+[[redirects]]
+  from = "/google*.html"
+  to = "/google*.html"
+  status = 200
+  force = true

@@ -11,6 +11,15 @@ export default defineConfig(({ mode }) => ({
     hmr: {
       overlay: false,
     },
+    // Serve static files from public/ during development
+    middlewares: [
+      (req, res, next) => {
+        // Enable CORS for sitemap and robots.txt
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+        next();
+      },
+    ],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
@@ -18,5 +27,15 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
+  },
+  // Ensure public/ directory is copied to dist/
+  publicDir: "public",
+  build: {
+    // Copy public files to dist/ during build
+    rollupOptions: {
+      output: {
+        // This ensures public assets are included in build
+      },
+    },
   },
 }));

@@ -1,0 +1,9 @@
+# Netlify redirects configuration
+# This file ensures static files like sitemap.xml are served correctly
+
+# Rewrite SPA to index.html for client-side routing
+/* /index.html 200
+
+# Ensure XML files are served with correct mime type
+/sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
