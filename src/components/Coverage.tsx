@@ -17,7 +17,7 @@ export default function Coverage() {
 
         <div className="mx-auto mt-8 max-w-3xl space-y-4 text-center text-muted-foreground">
           <p>
-            A Advocacia S Silva presta serviços de defesa criminal em Atibaia e em toda a região: Bragança Paulista, Itatiba, Jundiaí, Piracaia, Nazaré Paulista, Mairiporã, Francisco Morato, Campo Limpo Paulista, Jarinu, Vinhedo, Valinhos e Campinas.
+            A Dra Julia Pelicioni presta serviços de defesa criminal em Atibaia e em toda a região: Bragança Paulista, Itatiba, Jundiaí, Piracaia, Nazaré Paulista, Mairiporã, Francisco Morato, Campo Limpo Paulista, Jarinu, Vinhedo, Valinhos e Campinas.
           </p>
           <p className="font-semibold text-foreground">
             Para casos federais, operações policiais de grande porte e recursos em tribunais superiores (STJ e STF), atuamos em todo o território nacional.
