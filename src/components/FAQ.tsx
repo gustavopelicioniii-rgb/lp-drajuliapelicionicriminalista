@@ -17,14 +17,14 @@ export default function FAQ() {
   return (
     <section id="faq" ref={ref} className={`bg-card section-padding transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
       <div className="container-custom max-w-3xl">
-        <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl text-center">
+        <h2 className="text-center font-display text-xl font-bold text-foreground md:text-3xl lg:text-4xl">
           Dúvidas frequentes sobre defesa criminal em Atibaia e região
         </h2>
 
-        <Accordion type="single" collapsible className="mt-10">
+        <Accordion type="single" collapsible className="mt-8 md:mt-10">
           {faqs.map((f, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border-border">
-              <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:text-primary hover:no-underline">
+              <AccordionTrigger className="py-4 text-left text-sm font-semibold leading-snug text-foreground hover:text-primary hover:no-underline md:text-base">
                 {f.q}
               </AccordionTrigger>
               <AccordionContent className="text-sm leading-relaxed text-muted-foreground">

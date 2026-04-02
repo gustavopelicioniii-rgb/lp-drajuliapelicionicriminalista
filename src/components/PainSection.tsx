@@ -18,26 +18,26 @@ export default function PainSection() {
   return (
     <section ref={ref} className={`section-padding transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
       <div className="container-custom">
-        <h2 className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl text-center">
+        <h2 className="text-center font-display text-xl font-bold text-foreground md:text-3xl lg:text-4xl">
           Você ou alguém da sua família está passando por isso AGORA?
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground font-semibold">
+        <p className="mx-auto mt-3 max-w-2xl px-1 text-center text-sm font-semibold text-muted-foreground md:mt-4 md:text-base">
           Cada hora sem uma advogada criminalista pode custar a liberdade. A Dra Julia Pelicioni atua de forma imediata — 24 horas por dia, 7 dias por semana.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-6">
           {cards.map((c, i) => (
-            <div key={i} className="rounded-lg border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_8px_30px_-12px_hsl(43,52%,54%,0.2)]">
-              <h3 className="font-display text-lg font-bold text-primary">{c.title}</h3>
+            <div key={i} className="rounded-lg border border-border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_8px_30px_-12px_hsl(43,52%,54%,0.2)] md:p-7">
+              <h3 className="font-display text-base font-bold text-primary md:text-lg">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="mb-4 text-lg font-bold text-destructive">⚠️ NÃO ENFRENTE ISSO SOZINHO. CADA MINUTO CONTA.</p>
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="gap-2 bg-whatsapp text-whatsapp-foreground hover:bg-whatsapp/90 font-bold" style={{ minHeight: 48 }}>
+        <div className="mt-8 text-center md:mt-12">
+          <p className="mb-4 px-2 text-base font-bold text-destructive md:text-lg">⚠️ NÃO ENFRENTE ISSO SOZINHO. CADA MINUTO CONTA.</p>
+          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex w-full max-w-sm">
+            <Button size="lg" className="w-full justify-center gap-2 bg-whatsapp font-bold text-whatsapp-foreground hover:bg-whatsapp/90" style={{ minHeight: 48 }}>
               <WhatsAppIcon size={18} /> QUERO FALAR COM A ADVOGADA AGORA
             </Button>
           </a>
